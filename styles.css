@@ -1,4 +1,64 @@
 * {
+    position: relative;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #0c2d1c;
+    font-weight: 600;
+    padding: 12px 18px;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.nav-links a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 3px;
+    background-color: #c79a1b;
+    transition: width 0.3s ease;
+}
+
+.nav-links a:hover::after {
+    width: 100%;
+}
+
+.nav-links a:hover {
+    color: #c79a1b;
+    background-color: rgba(199, 154, 27, 0.08);
+}
+
+/* Hero Section */
+.hero {
+    min-height: 100vh;
+    background-color: #f5f5f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 20px;
+}
+
+.hero-content {
+    background-color: white;
+    width: 100%;
+    max-width: 1100px;
+    padding: 60px 50px 0;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.08);
+    position: relative;
+}
+
+.hero-image {
+    width: 100%;
+    max-width: 700px;
+    display: block;
+    margin: 0 auto 40px;
+}
+
 .hero h1 {
     font-size: 3.5rem;
     color: #0c2d1c;
@@ -16,52 +76,4 @@
 }
 
 .btn {
-    display: inline-block;
-    padding: 15px 35px;
-    background-color: #c79a1b;
-    color: white;
-    text-decoration: none;
-    border-radius: 3px;
-    transition: 0.3s ease;
-    font-weight: bold;
-    margin-bottom: 50px;
-}
-
-.hero-button-container {
-    text-align: center;
-}
-
-.btn:hover {
-    background-color: #0c2d1c;
-}
-
-/* Decorative Bottom Bar */
-.hero-content::after {
-    content: "";
-    display: block;
-    width: 100%;
-    height: 18px;
-    background: linear-gradient(
-        to right,
-        #0c2d1c 0%,
-        #0c2d1c 45%,
-        #c79a1b 45%,
-        #c79a1b 55%,
-        #0c2d1c 55%,
-        #0c2d1c 100%
-    );
-    margin-top: 20px;
-}
-
-/* About Page */
-.about-section {
-    padding: 100px 8%;
-    background-color: #f5f5f5;
-}
-
-.about-container {
-    display: flex;
-    gap: 60px;
-    align-items: center;
-    flex-wrap: wrap;
-    background-color: w
+    display: inl
