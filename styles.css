@@ -1,20 +1,4 @@
 * {
-.hero-content {
-    background-color: white;
-    width: 100%;
-    max-width: 1100px;
-    padding: 60px 50px 0;
-    box-shadow: 0 10px 40px rgba(0,0,0,0.08);
-    position: relative;
-}
-
-.hero-image {
-    width: 100%;
-    max-width: 700px;
-    display: block;
-    margin: 0 auto 40px;
-}
-
 .hero h1 {
     font-size: 3.5rem;
     color: #0c2d1c;
@@ -71,16 +55,13 @@
 
 /* About Page */
 .about-section {
-    padding: 80px 8%;
+    padding: 100px 8%;
+    background-color: #f5f5f5;
 }
 
 .about-container {
     display: flex;
-    gap: 50px;
+    gap: 60px;
     align-items: center;
     flex-wrap: wrap;
-}
-
-.about-image {
-    width: 100%;
-    max-width: 500px
+    background-color: w
